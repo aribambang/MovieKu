@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.movieku.app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="MovieKu" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginStyle" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:label="Registrasi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.LoginActivity"
+                />
+        </activity>
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LoginStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.ForgotpasswordActivity"
+            android:label="Lupa Password"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.LoginActivity"
+                />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:scrollbars="vertical"
+    android:scrollbarThumbVertical="@color/colorAccent"
+    android:layout_marginBottom="55dp"
+    tools:context=".Fragment.BerandaFragment"
+    android:background="@android:color/background_dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                >
+            <TextView
+                android:id="@+id/sedangtayang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sedang Tayang"
+                android:padding="10dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/sedangtayang"
+                android:id="@+id/sedangtayang_recycler_view"
+                android:background="@android:color/background_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                android:scrollbarThumbHorizontal="@color/colorAccent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    android:layout_marginTop="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal">
+            <TextView
+                android:id="@+id/akantayang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Akan Tayang"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/akantayang_recycler_view"
+                android:layout_below="@+id/akantayang"
+                android:background="@android:color/background_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                android:scrollbarThumbHorizontal="@color/colorAccent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    android:layout_marginTop="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie Lainnya"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lainnya_recycler_view"
+                android:layout_below="@+id/akantayang"
+                android:background="@android:color/background_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

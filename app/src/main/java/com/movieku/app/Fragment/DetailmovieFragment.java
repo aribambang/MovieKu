@@ -14,6 +14,7 @@ import com.movieku.app.R;
  */
 public class DetailmovieFragment extends Fragment {
 
+    View rootView;
 
     public DetailmovieFragment() {
         // Required empty public constructor
@@ -24,7 +25,15 @@ public class DetailmovieFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_detailmovie, container, false);
+        rootView =  inflater.inflate(R.layout.fragment_detailmovie, container, false);
+
+
+
+
+
+
+
+        return rootView;
     }
 
 }

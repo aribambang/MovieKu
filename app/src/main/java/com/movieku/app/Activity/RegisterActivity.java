@@ -35,7 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        email = (EditText)findViewById(R.id.username);
+        email = (EditText)findViewById(R.id.email);
         password = (EditText)findViewById(R.id.password);
         username = (EditText)findViewById(R.id.username);
         register = (Button)findViewById(R.id.link_register);
@@ -43,7 +43,7 @@ public class RegisterActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                registerUser();
             }
         });
 
@@ -111,7 +111,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 User user = new User(
                                         userJson.getInt("id_user"),
                                         userJson.getString("username"),
-                                        userJson.getString("email_user")
+                                        userJson.getString("email")
                                 );
 
 
